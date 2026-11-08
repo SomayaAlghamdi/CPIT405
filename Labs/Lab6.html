@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPIT 405 - Lab 6</title>
+    <link rel="stylesheet" href="lab6.css">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <span class="lab-label">CPIT 405 • LAB 06</span>
+            <h1>Like & Dislike</h1>
+            <p>Share your opinion and leave a comment!</p>
+        </header>
+
+        <section class="vote-section">
+            <button id="likeBtn" type="button">
+                👍 Like <span id="likeCount">0</span>
+            </button>
+
+            <button id="dislikeBtn" type="button">
+                👎 Dislike <span id="dislikeCount">0</span>
+            </button>
+        </section>
+
+        <section class="comment-section">
+            <h2>Leave a Comment</h2>
+
+            <textarea id="commentInput"
+                      placeholder="Write your comment..."
+                      rows="4"></textarea>
+
+            <div class="actions">
+                <button id="submitBtn" type="button">
+                    Submit
+                </button>
+
+                <button id="resetBtn" type="button">
+                    Clear
+                </button>
+            </div>
+        </section>
+
+        <p id="message" role="status" aria-live="polite"></p>
+
+        <section class="comments-section">
+            <h2>Comments</h2>
+            <div id="commentsList"></div>
+        </section>
+    </main>
+
+    <script src="lab6.js"></script>
+</body>
+</html>
+
