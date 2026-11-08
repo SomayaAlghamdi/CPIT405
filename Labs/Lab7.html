@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPIT 405 - Lab 7</title>
+    <link rel="stylesheet" href="lab7.css">
+    <script src="lab7.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Unsplash Photo Search</h1>
+        <p>CPIT 405 - Lab 7: Asynchronous JavaScript</p>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h2>Search for Photos</h2>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Enter a keyword, e.g. cats"
+            >
+
+            <div class="buttons">
+                <button id="xhrBtn">XMLHttpRequest</button>
+                <button id="promiseBtn">Fetch with Promises</button>
+                <button id="asyncBtn">Fetch with Async/Await</button>
+            </div>
+
+            <p id="statusMessage"></p>
+        </section>
+
+        <section>
+            <h2>Search Results</h2>
+            <div id="imageContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>CPIT 405 - Internet Applications</p>
+    </footer>
+
+</body>
+</html>

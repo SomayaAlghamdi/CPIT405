@@ -572,7 +572,23 @@ function sort(elem) {
     rowsArray.forEach(row => tbody.appendChild(row));
 }
 
+let playerTable = document.getElementById("player-stats");
 
+playerTable.addEventListener("mouseover", function(event) {
+    let row = event.target.closest("tbody tr");
+
+    if (row) {
+        row.style.backgroundColor = "#dbeafe";
+    }
+});
+
+playerTable.addEventListener("mouseout", function(event) {
+    let row = event.target.closest("tbody tr");
+
+    if (row && !row.contains(event.relatedTarget)) {
+        row.style.backgroundColor = "";
+    }
+});
 
 
 
